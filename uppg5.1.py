@@ -1,0 +1,1 @@
+print('detta program skriver ut en svart kung och tecknet för pi!')
