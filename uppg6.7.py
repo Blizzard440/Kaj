@@ -12,7 +12,3 @@ while True:
     m.append(rad)
 
 print(m)
-
-
-
-#inte fulländad
