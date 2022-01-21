@@ -1,0 +1,41 @@
+Tillägs kristaller
+
+Tillägs kristaller är något som man kan equipa på olika spelpjäser för att göra dem bättre.
+Dessa kristaller är fullt randomiserade när det kommer till vilka stats man får samt hur mycket av varje stat man får när man uppgraderar dem.
+
+En engravement kristall består av 2 stationära stats och 5 extra stats.
+
+Statlista:
+ATK% --> Base damage+
+ATK+ --> Base damage+ fast en sämre version är ATK%
+VIT% --> Mer hitpoints
+VIT+ --> Mer hitpoints fast en sämre verion än VIT%
+MDEF% --> Magic defence+ Skyddar mot magiska attaker
+MDEF+ --> Magic defence+ fast sämre än MDEF%
+PDEF% --> Physical defence+ Skyddas mot vanliga attacker med t.ex vapen eller kroppsdelar
+PDEF+ --> Physical defence+ fast sämre verion än PDEF%
+CRTCHA% --> Högre chance att få en critical hit. En critical hit gör mer skada än en som inte är critical
+CRTDMG% --> Högre skada på dina critical hits
+SPD+ --> Ger mer speed. Desto mer spee du har desto fler gånger får din spelpjär attakera
+
+Alla dessa stats har du en lika stor chans att få på din kristall
+
+När det kommer till uppgradering av kristallen så kan man uppgradera den 10 gånger.
+Varje gång så går de 2 stationära statsen upp.
+Var annan uppgradering så går 1 av de extra statsen upp.
+
+De stationära statsen har ett fixerat nummer som de går upp medans extra statsen går upp med random storlek.
+
+Storleken som extrastats går upp med:
+ATK% --> 5% - 10%
+ATK+ --> 17 - 31
+VIT% --> 5% - 10%
+VIT+ --> 17 - 31
+MDEF% --> 5% - 10%
+MDEF+ --> 17 - 31
+PDEF% --> 5% - 10%
+PDEF+ --> 17 - 31
+CRTCHA% --> 6% - 9%
+CRTDMG% --> 7% - 15%
+SPD+ --> 9 - 14
+
