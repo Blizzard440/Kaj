@@ -14,6 +14,8 @@ eräknare3 = 0
 eräknare4 = 0
 eräknare5 = 0
 
+count = 0
+countsub = 0
 
 mainstatökning = 15
 mainstatökningflat = 50
@@ -25,6 +27,12 @@ randomstatökning = [5,6,7,8,9,10]
 randomstatöcrtcha = [6,7,8,9]
 randomstatöcrtdmg = [7,8,9,10,11,12,13,14,15]
 randomstatöspd = [9,10,11,12,13,14]
+
+randomradnomstatflat = random.choice(randomstatflat)
+randomstatprocent = random.choice(randomstatökning)
+randomstatcrtcha = random.choice(randomstatöcrtcha)
+randomstatcrtdmg = random.choice(randomstatöcrtdmg)
+randomstatspd = random.choice(randomstatöspd)
 
 
 stats = ['ATK%', 'ATK+', 'VIT%', 'VIT+', 'MDEF%', 'MDEF+', 'PDEF%', 'PDEF+', 'CRTCHA%', 'CRTDMG%', 'SPD+']
@@ -42,14 +50,68 @@ stats = ['ATK%', 'ATK+', 'VIT%', 'VIT+', 'MDEF%', 'MDEF+', 'PDEF%', 'PDEF+', 'CR
 #randomstatcrtcha = random.choice(randomstatöcrtcha)
 #randomstatcrtdmg = random.choice(randomstatöcrtdmg)
 #randomstatspd = random.choice(randomstatöspd)
-for i in range(0,7):
+
+#for i in range(0,7):
+#    randomstat = random.choice(stats)
+while count <= 1:
+    randomradnomstatflat = random.choice(randomstatflat)
+    randomstatprocent = random.choice(randomstatökning)
+    randomstatcrtcha = random.choice(randomstatöcrtcha)
+    randomstatcrtdmg = random.choice(randomstatöcrtdmg)
+    randomstatspd = random.choice(randomstatöspd)
     randomstat = random.choice(stats)
-    while randomstat in mainstats:
-        randomstat
-        if randomstat != mainstats:
-            mainstats.append(randomstat)
-            mainstats.append(mainstatökning)
-            break
+    if randomstat not in mainstats:
+        mainstats.append(randomstat)
+        mainstats.append(mainstatökning)
+
+        count = count + 1
+
+
+while countsub <= 4:
+    randomradnomstatflat = random.choice(randomstatflat)
+    randomstatprocent = random.choice(randomstatökning)
+    randomstatcrtcha = random.choice(randomstatöcrtcha)
+    randomstatcrtdmg = random.choice(randomstatöcrtdmg)
+    randomstatspd = random.choice(randomstatöspd)
+    randomstat = random.choice(stats)
+    if randomstat not in substats or mainstats:
+        substats.append(randomstat)
+        substats.append(randomstatprocent)
+
+        countsub = countsub + 1
+
+print('Engravement crystal current stats')
+print(mainstats)
+print(substats)
+
+print(' ')
+print('Type "1" if throw away crystal')
+print('Type "2" if upgrade to max level')
+inp = input('What to do with the crystal? ')
+
+if inp == '1':
+    print('You have successfully gotten rid of your crystal :D')
+
+elif inp == '2':
+    print('Max')
+
+else:
+    print('Invalid command')
+
+
+#            print(count)
+#            print(mainstats)
+    
+    
+#     for x in stats:
+# #        randomstat
+#         if randomstat in mainstats:
+#             print('Finns redan')
+            
+#         else:
+#             mainstats.append(randomstat)
+#             mainstats.append(mainstatökning)
+
 
     # mainstats.append(randomstat)
     # mainstats.append(mainstatökning)
@@ -233,22 +295,3 @@ for i in range(0,7):
 # #for i in range(0,5):
 # #    randomstat = random.choice(stats)
 # #    substats.append(randomstat)
-
-print('Engravement crystal current stats')
-print(mainstats)
-#print(substats)
-
-print(' ')
-print('Type "1" if throw away crystal')
-print('Type "2" if upgrade to max level')
-inp = input('What to do with the crystal? ')
-
-if inp == '1':
-    print('You have successfully gotten rid of your crystal :D')
-
-elif inp == '2':
-    print('Max')
-
-else:
-    print('Invalid command')
-
