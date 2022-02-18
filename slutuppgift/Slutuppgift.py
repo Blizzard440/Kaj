@@ -42,122 +42,201 @@ stats = ['ATK%', 'ATK+', 'VIT%', 'VIT+', 'MDEF%', 'MDEF+', 'PDEF%', 'PDEF+', 'CR
 #randomstatcrtcha = random.choice(randomstatöcrtcha)
 #randomstatcrtdmg = random.choice(randomstatöcrtdmg)
 #randomstatspd = random.choice(randomstatöspd)
-
-
-for i in range(0,2):   #Mainstats
+for i in range(0,7):
     randomstat = random.choice(stats)
-    randomradnomstatflat = random.choice(randomstatflat)
-    randomstatprocent = random.choice(randomstatökning)
-    randomstatcrtcha = random.choice(randomstatöcrtcha)
-    randomstatcrtdmg = random.choice(randomstatöcrtdmg)
-    randomstatspd = random.choice(randomstatöspd)
+    while randomstat in mainstats:
+        randomstat
+        if randomstat != mainstats:
+            mainstats.append(randomstat)
+            mainstats.append(mainstatökning)
+            break
+
+    # mainstats.append(randomstat)
+    # mainstats.append(mainstatökning)
+        
+
+
+
+#for i in range(0,2):   #Mainstats
+#    randomstat = random.choice(stats)
+#    randomradnomstatflat = random.choice(randomstatflat)
+#    randomstatprocent = random.choice(randomstatökning)
+#    randomstatcrtcha = random.choice(randomstatöcrtcha)
+#    randomstatcrtdmg = random.choice(randomstatöcrtdmg)
+#    randomstatspd = random.choice(randomstatöspd)
     
-    if randomstat == stats[0]:
-
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[1]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[2]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[3]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[4]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[5]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[6]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[7]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[8]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    elif randomstat == stats[9]:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
-
-    else:
-        mainstats.append(randomstat)
-        mainstats.append(mainstatökning)
+#    if randomstat == stats[0]:
+#        for i in range(0,5):
+#            if (mainstats == 'ATK%'):
+#                print('finns redan')
+#            while randomstat == 'ATK%':
+#                randomstat
+#                if randomstat != 'ATK%':
+#                    mainstats.append(randomstat)
+#                    mainstats.append(mainstatökning)
+                
 
 
-for i in range(0,5):   #Substats
-    randomstat = random.choice(stats)
-    randomradnomstatflat = random.choice(randomstatflat)
-    randomstatprocent = random.choice(randomstatökning)
-    randomstatcrtcha = random.choice(randomstatöcrtcha)
-    randomstatcrtdmg = random.choice(randomstatöcrtdmg)
-    randomstatspd = random.choice(randomstatöspd)
+#                random.choice(stats)
+#                if random.choice(stats) == 'ATK%':
+#                    continue
+#                else:
+#                    print('fem')
+#                    break
+#            else:
+#                mainstats.append(randomstat)
+#                mainstats.append(mainstatökning)
 
-    if randomstat == stats[0]:
-        substats.append(randomstat)
-        substats.append(randomstatprocent)
+#    elif randomstat == stats[1]:
+#        for i in mainstats:
+#            if (mainstats == 'ATK+'):
+#                print('hej')
 
-    elif randomstat == stats[1]:
-        substats.append(randomstat)
-        substats.append(randomradnomstatflat)
+# #            else:
+# {                mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
 
-    elif randomstat == stats[2]:
-        substats.append(randomstat)
-        substats.append(randomstatprocent)
+#     elif randomstat == stats[2]:
+#         for i in mainstats:
+#             if (mainstats == 'VIT%'):
+#                 print('hej')
 
-    elif randomstat == stats[3]:
-        substats.append(randomstat)
-        substats.append(randomradnomstatflat)
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
 
-    elif randomstat == stats[4]:
-        substats.append(randomstat)
-        substats.append(randomstatprocent)
+#     elif randomstat == stats[3]:
+#         for i in mainstats:
+#             if (mainstats == 'VIT+'):
+#                 print('hej')
 
-    elif randomstat == stats[5]:
-        substats.append(randomstat)
-        substats.append(randomradnomstatflat)
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
 
-    elif randomstat == stats[6]:
-        substats.append(randomstat)
-        substats.append(randomstatprocent)
+#     elif randomstat == stats[4]:
+#         for i in mainstats:
+#             if (mainstats == 'MDEF%'):
+#                 print('hej')
 
-    elif randomstat == stats[7]:
-        substats.append(randomstat)
-        substats.append(randomradnomstatflat)
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
 
-    elif randomstat == stats[8]:
-        substats.append(randomstat)
-        substats.append(randomstatcrtcha)
+#     elif randomstat == stats[5]:
+#         for i in mainstats:
+#             if (mainstats == 'MDEF+'):
+#                 print('hej')
 
-    elif randomstat == stats[9]:
-        substats.append(randomstat)
-        substats.append(randomstatcrtdmg)
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
 
-    else:
-        substats.append(randomstat)
-        substats.append(randomstatspd)
+#     elif randomstat == stats[6]:
+#         for i in mainstats:
+#             if (mainstats == 'PDEF%'):
+#                 print('hej')
+
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
+
+#     elif randomstat == stats[7]:
+#         for i in mainstats:
+#             if (mainstats == 'PDEF+'):
+#                 print('hej')
+
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
+
+#     elif randomstat == stats[8]:
+#         for i in mainstats:
+#             if (mainstats == 'CRTCHA%'):
+#                 print('hej')
+
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
+
+#     elif randomstat == stats[9]:
+#         for i in mainstats:
+#             if (mainstats == 'CRTDMG%'):
+#                 print('hej')
+
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
+#     else:
+#         for i in mainstats:
+#             if (mainstats == 'SPD+'):
+#                 print('hej')
+
+#             else:
+#                 mainstats.append(randomstat)
+#                 mainstats.append(mainstatökning)
+
+
+# for i in range(0,5):   #Substats
+#     randomstat = random.choice(stats)
+#     randomradnomstatflat = random.choice(randomstatflat)
+#     randomstatprocent = random.choice(randomstatökning)
+#     randomstatcrtcha = random.choice(randomstatöcrtcha)
+#     randomstatcrtdmg = random.choice(randomstatöcrtdmg)
+#     randomstatspd = random.choice(randomstatöspd)
+
+#     if randomstat == stats[0]:
+#         substats.append(randomstat)
+#         substats.append(randomstatprocent)
+
+#     elif randomstat == stats[1]:
+#         substats.append(randomstat)
+#         substats.append(randomradnomstatflat)
+
+#     elif randomstat == stats[2]:
+#         substats.append(randomstat)
+#         substats.append(randomstatprocent)
+
+#     elif randomstat == stats[3]:
+#         substats.append(randomstat)
+#         substats.append(randomradnomstatflat)
+
+#     elif randomstat == stats[4]:
+#         substats.append(randomstat)
+#         substats.append(randomstatprocent)
+
+#     elif randomstat == stats[5]:
+#         substats.append(randomstat)
+#         substats.append(randomradnomstatflat)
+
+#     elif randomstat == stats[6]:
+#         substats.append(randomstat)
+#         substats.append(randomstatprocent)
+
+#     elif randomstat == stats[7]:
+#         substats.append(randomstat)
+#         substats.append(randomradnomstatflat)
+
+#     elif randomstat == stats[8]:
+#         substats.append(randomstat)
+#         substats.append(randomstatcrtcha)
+
+#     elif randomstat == stats[9]:
+#         substats.append(randomstat)
+#         substats.append(randomstatcrtdmg)
+
+#     else:
+#         substats.append(randomstat)
+#         substats.append(randomstatspd)
 
   
-#for i in range(0,5):
-#    randomstat = random.choice(stats)
-#    substats.append(randomstat)
+# #for i in range(0,5):
+# #    randomstat = random.choice(stats)
+# #    substats.append(randomstat)
 
 print('Engravement crystal current stats')
 print(mainstats)
-print(substats)
+#print(substats)
 
 print(' ')
 print('Type "1" if throw away crystal')
